@@ -1,0 +1,27 @@
+<div class="form-group">
+  <label for="username">Username: </label>
+  <input required autofocus placeholder="Enter Username" type="text" name="username" id="username" value="<%= user ? req.body.username : '' %>" class="form-control">
+</div>
+<br>
+<div class="form-group">
+  <label for="password">Password: </label>
+  <input required placeholder="Enter Password" type="password" name="password" id="password" class="form-control">
+</div>
+<br>
+<div class="form-group">
+  <label for="email">Email: </label>
+  <input required placeholder="Enter Email" type="email" name="email" id="email" value="<%= user ? req.body.email : '' %>" class="form-control">
+</div>
+<br>
+<div class="form-group">
+  <label for="displayName">Display Name: </label>
+  <input required placeholder="Enter Display Name" type="text" name="displayName" id="displayName" value="<%= user ? req.body.displayName : '' %>" class="form-control">
+</div>
+<br>
+
+<div class="form-group text-right">
+  <input type="submit" class="btn btn-primary" value="Register">
+  <a href="/">
+    <input type="button" class="btn btn-warning" value="Cancel">
+  </a>
+</div>
